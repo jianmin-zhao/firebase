@@ -1,0 +1,36 @@
+[debug] [2017-07-24T23:01:00.966Z] ----------------------------------------------------------------------
+[debug] [2017-07-24T23:01:00.968Z] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-07-24T23:01:00.969Z] CLI Version:  3.9.1
+[debug] [2017-07-24T23:01:00.969Z] Platform:     darwin
+[debug] [2017-07-24T23:01:00.969Z] Node Version: v6.11.0
+[debug] [2017-07-24T23:01:00.969Z] Time:         Mon Jul 24 2017 16:01:00 GMT-0700 (PDT)
+[debug] [2017-07-24T23:01:00.969Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-24T23:01:00.980Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-24T23:01:00.981Z] > authorizing via signed-in user
+[debug] [2017-07-24T23:01:00.982Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-07-24T23:01:00.982Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/4zKSN77gaKVoP6KKkgxoMUJnZr1WCmRyvsgRzQLpHU4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Jul 24 2017 16:01:00 GMT-0700 (PDT)
+[debug] [2017-07-24T23:01:01.319Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-24T23:01:01.327Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/medialast-a988e  
+ Mon Jul 24 2017 16:01:01 GMT-0700 (PDT)
+[debug] [2017-07-24T23:01:02.239Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-24T23:01:02.240Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/medialast-a988e/tokens  
+ Mon Jul 24 2017 16:01:02 GMT-0700 (PDT)
+[debug] [2017-07-24T23:01:02.769Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/ezcharmo/Development/MediaLast'...
+[info] 
+[debug] [2017-07-24T23:01:02.772Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/medialast-a988e  
+ Mon Jul 24 2017 16:01:02 GMT-0700 (PDT)
+[debug] [2017-07-24T23:01:03.207Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-24T23:01:03.208Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/250076365534/clients/_:getWebAppConfig  
+ Mon Jul 24 2017 16:01:03 GMT-0700 (PDT)
+[debug] [2017-07-24T23:01:03.936Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: www
+[info] ✔  hosting: Local server: http://localhost:5000
+
