@@ -1,5 +1,12 @@
 {
   "hosting": {
-    "public": "hosting"
+    "public": "hosting",
+
+    // 
+    "rewrites": 
+    	[ 
+    		{ "source": "/RequestAuthorization", "function": "RequestAuthorization"}, 
+    		{ "source": "/linkAccount", "function": "linkAccount"}
+    	]
   }
 }

@@ -1,0 +1,32 @@
+
+<div class="login">
+    <p id="demo"></p>
+	<h1>Link your account <img src="img/ML.png" ></h1>
+    <form method="post" onsubmit="return false;" >
+    	<input type="text" name="u" placeholder="Username" required="required" />
+        <input type="password" name="p" placeholder="Password" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large" onclick="check(this.form)">Link my Account.</button>
+    </form>
+</div>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+	console.log( "check" );
+	var params = "?un=" + form.u.value + "&pwd=" + form.p.value;
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		console.log("onreadystatechange " + this.readyState );
+    	if (this.readyState == 4 && this.status == 200) {
+      		document.getElementById("demo").innerHTML = this.responseText;
+    	}
+  	};
+
+
+	xhr.open("GET", '/linkAccount' + params, true);
+	//Send the proper header information along with the request
+	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhr.send();
+	console.log( "posted :" + params );
+	return false ;
+}
+</script>
