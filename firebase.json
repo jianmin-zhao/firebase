@@ -5,8 +5,10 @@
     // 
     "rewrites": 
     	[ 
-    		{ "source": "/RequestAuthorization", "function": "RequestAuthorization"}, 
-    		{ "source": "/linkAccount", "function": "linkAccount"}
+    		// source = external resource.   function = index.js export.membername.
+    		{ "source": "/RequestAuthorization", "function": "RequestAuth"}, 
+    		{ "source": "/linkAccount", "function": "linkAccount"},
+    		{ "source": "/RequestToken", "function": "RequestToken"}
     	]
   }
 }

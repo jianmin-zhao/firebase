@@ -15,6 +15,15 @@ app.engine('handlebars', exphbs({defaultLayout: 'mainlayout'}));
 app.set('view engine', 'handlebars');
 
 app.get('/linkAccount', (req, res) => {
+
+    // "?un=" + form.u.value + "&pwd=" + form.p.value + "&id={{sessionid}}"
+	var session = {}
+  var id  = req.query.id;
+
+  console.log( "Receive session.id = " + id );
+  
+
+
     res.redirect("RequestToken");
 });
 

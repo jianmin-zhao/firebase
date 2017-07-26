@@ -12,7 +12,7 @@
 function check(form)/*function to check userid & password*/
 {
 	console.log( "check" );
-	var params = "?un=" + form.u.value + "&pwd=" + form.p.value;
+	var params = "?un=" + form.u.value + "&pwd=" + form.p.value + "&id={{sessionid}}";
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function() {
 		console.log("onreadystatechange " + this.readyState );
