@@ -33,7 +33,7 @@ const NO_INPUTS = [
   'We can stop here. See you soon.'
 ];
 
-exports.MediaLast = functions.https.onRequest((request, response) => {
+exports.handler = functions.https.onRequest((request, response) => {
 
 
   const app = new App({ request, response });

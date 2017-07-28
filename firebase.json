@@ -1,7 +1,6 @@
 {
   "hosting": {
     "public": "hosting",
-
     // 
     "rewrites": 
     	[ 
@@ -10,5 +9,8 @@
     		{ "source": "/linkAccount", "function": "linkAccount"},
     		{ "source": "/RequestToken", "function": "RequestToken"}
     	]
+  },
+  "database": {
+    "rules": "database.rules.json"
   }
 }

@@ -1,11 +1,17 @@
 const functions = require('firebase-functions');
 
 // Setup the express .... with handlebars...
- 
 const ModuleRequestAuthorization = require('./RequestAuthorization');
 const ModuleLinkAccount = require('./linkAccount');
 const ModuleRequestToken = require('./RequestToken');
 const ModuleMediaLast = require('./MediaLast');
+
+const Auth = require("./authentication");
+
+
+
+Auth.isValidUser("boxsterpaul@gmail.com", "mechis1964");
+
 
 exports.RequestAuth = functions.https.onRequest(ModuleRequestAuthorization.handler);
 exports.linkAccount = functions.https.onRequest(ModuleLinkAccount.handler);

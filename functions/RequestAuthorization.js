@@ -2,8 +2,7 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const shortId = require('shortid');
-var storage = require('node-persist');
-storage.init();
+var localStorage = require('./LocalStorage');
  
 const app = express();
 //app.set('views', path.join(__dirname, 'views'));
@@ -21,15 +20,11 @@ app.get('/*', (req, res) => {
   session.scope = req.query.scope;
   session.response_type = req.query.response_type;
 
-  storage.setItem(session.id, session );
+  localStorage.setItem( session.id, session );
 
-  console.log( "Send and save session.id = " + session.id );
-  var sessionString = storage.getItem( session.id );
-  console.log( "SessionString = " + sessionString );
-
-  res.render('mainview', {
-     sessionid : session.id
-  });
+   res.render('mainview', {
+     		sessionid : session.id
+  		});
 });
 
 exports.handler = app;
