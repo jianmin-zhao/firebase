@@ -5,7 +5,7 @@ var sync = require("synchronize");
 const localStoragePath = "restricted_access/localstorage";
 
 // Fetch the service account key JSON file contents
-const serviceAccount = require("./medialast-a988e-firebase-adminsdk-88utb-84c634a740.json");
+const serviceAccount = require("./serviceaccount.json");
 const firebaseconfig = require("./firebaseconfig.json");
 
 // Initialize the app with a service account, granting admin privileges

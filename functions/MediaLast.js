@@ -33,7 +33,7 @@ const NO_INPUTS = [
   'We can stop here. See you soon.'
 ];
 
-exports.handler = functions.https.onRequest((request, response) => {
+exports.handler = function((request, response) => {
 
 
   const app = new App({ request, response });
@@ -51,7 +51,7 @@ exports.handler = functions.https.onRequest((request, response) => {
         // .addSuggestions(['History', 'Headquarters']));
     } else {
       app.ask(`Welcome to Media Last!`, NO_INPUTS);
-    }pr
+    }
   }
 
   // Say a fact
